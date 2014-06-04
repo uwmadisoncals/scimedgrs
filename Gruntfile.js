@@ -1,11 +1,10 @@
 module.exports = function(grunt) {
-
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       build: {
-        src: ['js/jquery-1.11.1.js','js/jquery.ui.js','js/jquery-ui-1.10.4.custom.min.js','js/jquery.iosslider.js','js/jquery.isotope.min.js','js/jquery-css-transform.js','js/jquery-rotate.js','js/browserdetect.js','js/mainactions.js','js/min/gsapi.min.js','js/blurobjs.js','library/scripts/vallenato.js','js/soilsextension_custom.js'],
+        src: ['js/scimedgrs_custom.js'],
         dest: 'js/min/master.min.js'
       }
     },
@@ -35,7 +34,7 @@ module.exports = function(grunt) {
   watch: {
     scripts: {
       files: ['js/*.js'],
-      tasks: ['uglify','concat:notMiny'],
+      tasks: ['uglify'],
       options: {
         livereload: true,
       },
