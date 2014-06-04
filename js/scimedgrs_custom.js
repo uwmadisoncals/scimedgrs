@@ -1,6 +1,6 @@
 (function($) {
 	//alert("testing");
-	$("#s").keyup(function(){
+	$("#prof_s").keyup(function(){
 		var filter = $(this).val(), count=0;
 
 		$(".profileSummary").each(function(){

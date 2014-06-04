@@ -7,6 +7,7 @@ get_header(); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
+				<div id="prof_s_wrapper" ><input id="prof_s" class="field" type="text" placeholder="Search Profiles" name="s_profiles"></div>
 
 				<?php $args = array( 'post_type' => 'student_profiles', 'meta_key' => 'last_name', 'posts_per_page' => 200, 'orderby' => 'last_name', 'order' => 'ASC' );
 					$loop = new WP_Query( $args );

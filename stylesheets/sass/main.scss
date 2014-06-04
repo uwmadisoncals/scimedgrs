@@ -101,3 +101,34 @@
 .visible{
 	display:inline;
 }
+
+
+div#prof_s_wrapper{
+    display: block;
+    height: 3.25em;
+    width: 97%;
+}
+
+#main #prof_s {
+    background-color: #FFFFFF;
+    float: left;
+    transition-duration: 400ms;
+    transition-property: width, background;
+    transition-timing-function: ease;
+    width: 22%;
+    margin-top:0.65em;
+}
+
+#main #prof_s:focus{
+	width:35%;
+}
+
+input#prof_s {
+    background: url("../../images/search.png") no-repeat scroll 5px 6px #FFFFFF;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 14px;
+    height: 22px;
+    line-height: 1.2em;
+    padding: 4px 10px 4px 28px;
+}
+
