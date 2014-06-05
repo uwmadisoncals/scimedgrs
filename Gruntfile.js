@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         dest: 'js/min/master.min.js'
       }
     },
-  sass: {                              // Task
+  /*sass: {                              // Task
     dist: {                            // Target
       options: {                       // Target options
         style: 'compressed'
@@ -21,7 +21,8 @@ module.exports = function(grunt) {
           ext:'.css'                         // Dictionary of files
       }]
     }
-  },
+  }, */
+
   /*concat: {
     options: {
       separator: ' ',
@@ -31,6 +32,15 @@ module.exports = function(grunt) {
       dest: 'master-child.css',
     },
   },*/
+  compass:{
+    dist:{
+      options:{
+       //sassDir:'stylesheets/sass',
+        //cssDir:'stylesheets/css'
+        config:'config.rb'
+      }
+    }
+  },
   watch: {
     scripts: {
       files: ['js/*.js'],
@@ -41,7 +51,7 @@ module.exports = function(grunt) {
     },
     css: {
       files: '**/*.scss',
-      tasks: ['sass'],
+      tasks: ['compass'],
     options: {
         livereload: true,
       },
@@ -67,15 +77,16 @@ module.exports = function(grunt) {
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+ //grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-compass');
   
 
   // Default task(s).
   grunt.registerTask('default', ['uglify']);
-  grunt.registerTask('default', ['sass']);
+  //grunt.registerTask('default', ['sass']);
   grunt.registerTask('default', ['concat']);
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('default', ['imagemin']);
