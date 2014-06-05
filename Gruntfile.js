@@ -1,3 +1,29 @@
+/*
+
+DIRECTORY STRUCTURE
+===================
+
+theme
+ |
+ |-stylesheets
+    |
+  |-css
+  |  |
+  |  |-main.css
+  |
+  |-sass
+  |  |
+  |  |-modules
+  |  |-partials
+  |  |-vendor
+  |  |-__modules__.scss
+  |  |-__partials__.scss
+  |  |-__vendor__.scss
+  |  |-main.scss
+
+
+ */
+
 module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
