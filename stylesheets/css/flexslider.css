@@ -105,6 +105,18 @@ html[xmlns] .slides {display: block;}
 
 
 .flexslider {
-	left:-52px;
-	width: 687px;
+	left:-175px;
+	width: 830px;
+	top:-30px;
+ 	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: url(../../blur.svg#blur);f
+
+}
+
+.one-column #main {
+	width: 80%;
+	margin:0 auto;
 }

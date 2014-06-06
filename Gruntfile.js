@@ -92,6 +92,13 @@ module.exports = function(grunt) {
         livereload: true,
       },
       
+    },
+    cssmin:{
+      files:'stylesheets/css/flexslider.css',
+      tasks:['cssmin'],
+      options:{
+        livereload:true,
+      },
     }
   },
   

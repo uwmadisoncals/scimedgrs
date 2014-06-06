@@ -170,3 +170,23 @@ input#prof_s {
 ////////////////////////////////////////////////////////////////////////////////
 // Experimenting with the look of the theme
 ////////////////////////////////////////////////////////////////////////////////
+.one-column #main{
+	//background: url("../../images/sidebar_bg_edit_1.gif") repeat-y scroll right top rgba(0, 0, 0, 0);
+	border-style:none;
+	boerder-width:none;
+}
+
+#main{
+	border-left:none;
+}
+#page{
+	background:none;
+}
+
+#colophon{
+	border-top:none;
+}
+
+#site-generator{
+	border-top:none;
+}
