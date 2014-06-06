@@ -32,6 +32,16 @@ module.exports = function(grunt) {
       build: {
         src: ['js/scimedgrs_custom.js'],
         dest: 'js/min/master.min.js'
+      },
+      uglifyCSS:{
+        src:['stylesheets/css/flexslider.css'],
+        dest:'stylesheets/css/flexslider.min.css'
+      }
+    },
+    cssmin:{
+      css:{
+        src:'stylesheets/css/flexslider.css',
+        dest:'stylesheets/css/flexslider.min.css'
       }
     },
   /*sass: {                              // Task
@@ -108,6 +118,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   
 
   // Default task(s).
@@ -116,6 +127,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['concat']);
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('default', ['imagemin']);
+   grunt.registerTask('default', ['cssmin']);
   
  
 
