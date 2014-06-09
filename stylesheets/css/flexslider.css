@@ -108,15 +108,24 @@ html[xmlns] .slides {display: block;}
 	left:-175px;
 	width: 830px;
 	top:-30px;
+	/*
  	-webkit-filter: blur(3px);
 	-moz-filter: blur(3px);
 	-o-filter: blur(3px);
 	-ms-filter: blur(3px);
-	filter: url(../../blur.svg#blur);f
+	filter: url(../../blur.svg#blur);
+	*/
 
 }
 
 .one-column #main {
 	width: 80%;
 	margin:0 auto;
+}
+
+img#testMask{
+	mask-image:url(../../genericSVG.svg) top left / cover;
+	-webkit-mask-image:url(../../genericSVG.svg) top left / cover;
+	-webkit-mask: url(../../genericSVG.svg);
+	-moz-mask-image:url(../../genericSVG.svg);
 }

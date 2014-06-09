@@ -1,0 +1,10 @@
+<!-- <svg height="140" width="500">
+  <ellipse cx="200" cy="80" rx="100" ry="50" style="fill:black;" />
+  Sorry, your browser does not support inline SVG.  
+</svg> -->
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="500" height="140" viewBox="0 0 722 540" enable-background="new 0 0 722 540" xml:space="preserve">
+         <ellipse cx="200" cy="80" rx="100" ry="50" style="fill:black;" />
+  Sorry, your browser does not support inline SVG. 
+         </svg>

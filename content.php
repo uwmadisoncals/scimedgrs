@@ -78,5 +78,6 @@
 			<?php endif; // End if comments_open() ?>
 
 			<?php edit_post_link( __( 'Edit', 'uwmadison' ), '<span class="edit-link">', '</span>' ); ?>
+		
 		</footer><!-- #entry-meta -->
 	</article><!-- #post-<?php the_ID(); ?> -->

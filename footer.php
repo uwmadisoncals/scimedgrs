@@ -13,6 +13,7 @@
 	</div><!-- #main -->
 
 	<footer id="colophon" role="contentinfo">
+<img id="testMask"/>
 
 			<?php
 				/* A sidebar in the footer? Yep. You can can customize
