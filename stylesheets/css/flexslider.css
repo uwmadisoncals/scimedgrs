@@ -108,6 +108,10 @@ html[xmlns] .slides {display: block;}
 	left:-175px;
 	width: 830px;
 	top:-30px;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
 	/*
  	-webkit-filter: blur(3px);
 	-moz-filter: blur(3px);
@@ -128,4 +132,36 @@ img#testMask{
 	-webkit-mask-image:url(../../genericSVG.svg) top left / cover;
 	-webkit-mask: url(../../genericSVG.svg);
 	-moz-mask-image:url(../../genericSVG.svg);
+}
+
+
+div#slider_519.flexslider div#fadeDiv_0 {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 5%;
+background: -moz-linear-gradient(left,  rgba(234,231,222,1) 0%, rgba(234,231,222,0.99) 1%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(234,231,222,1)), color-stop(1%,rgba(234,231,222,0.99)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(234,231,222,1) 0%,rgba(234,231,222,0.99) 1%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(234,231,222,1) 0%,rgba(234,231,222,0.99) 1%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(234,231,222,1) 0%,rgba(234,231,222,0.99) 1%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(234,231,222,1) 0%,rgba(234,231,222,0.99) 1%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eae7de', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+}
+
+div#slider_519.flexslider div#fadeDiv_1 {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 5%;
+  right:0;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(234,231,222,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(234,231,222,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(234,231,222,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(234,231,222,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(234,231,222,1) 100%); /* IE10+ */
+background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(234,231,222,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#eae7de',GradientType=1 ); /* IE6-9 */
 }
