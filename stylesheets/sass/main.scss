@@ -22,7 +22,7 @@
 	////////////////////////
 	// vendor: _grid.scss //
 	////////////////////////
-	
+
 	$total_width: 100%;
 	$container_margin: 3.85%;
 	$gutter_width: 3.85%;
@@ -60,7 +60,7 @@
 .profileSummary img {
 	width: 100%;
 	height: auto;
-	
+
 }
 
 .singleProfile {
@@ -110,7 +110,7 @@
 .profileSummary .textCopy {
 	font-size: 12px;
 	padding-top: 0px;
-	
+
 }
 
 .profileSummary .textCopy .row {
@@ -170,23 +170,32 @@ input#prof_s {
 ////////////////////////////////////////////////////////////////////////////////
 // Experimenting with the look of the theme
 ////////////////////////////////////////////////////////////////////////////////
-.one-column #main{
+.one-column div#main{
 	//background: url("../../images/sidebar_bg_edit_1.gif") repeat-y scroll right top rgba(0, 0, 0, 0);
 	border-style:none;
-	boerder-width:none;
+	border-width:none;
+	width: 100%;
+}
+
+.home.one-column div#main{
+	//background: url("../../images/sidebar_bg_edit_1.gif") repeat-y scroll right top rgba(0, 0, 0, 0);
+	border-style:none;
+	border-width:none;
+	width: 80%;
 }
 
 #main{
 	border-left:none;
+	border-right: none;
 }
-#page{
+.home #page{
 	background:none;
 }
 
-#colophon{
+.home #colophon{
 	border-top:none;
 }
 
-#site-generator{
+.home #site-generator{
 	border-top:none;
 }
